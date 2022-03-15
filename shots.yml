@@ -3,8 +3,10 @@
   height: 800
 - url: https://quantumflytrap.com/
   output: quantum_flytrap.png
+  wait: 2000
   height: 800
 - url: https://lab.quantumflytrap.com/lab/measurement-destroys-interference
   output: virtual_lab.png
+  wait: 5000
   height: 800
  

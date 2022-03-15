@@ -51,10 +51,7 @@ jobs:
       run: |
         mkdir output
         cd output
-        shot-scraper multi ../shots.yml
-        ls .
-        cd ..
-        ls
+        shot-scraper multi ../websites.yml
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:

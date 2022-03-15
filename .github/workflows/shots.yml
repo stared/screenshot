@@ -49,13 +49,9 @@ jobs:
     - name: Take shots
       run: |
         shot-scraper multi shots.yml
-    - name: NPM install push-dir
-      shell: bash -l {0}
-      run: |-
-        npm install push-dir
-    - name: Commit and push to screenshots branch
-      shell: bash -l {0}
-      run: |-
-        git config user.name "Automated"
-        git config user.email "actions@users.noreply.github.com"
-        push-dir --dir=output --branch=screenshots
+     - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: screenshots
+          FOLDER: output

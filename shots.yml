@@ -1,12 +1,12 @@
 - url: https://p.migdal.pl
-  output: pmigdal.png
+  output: output/pmigdal.png
   height: 800
 - url: https://quantumflytrap.com/
-  output: quantum_flytrap.png
+  output: output/quantum_flytrap.png
   wait: 2000
   height: 800
 - url: https://lab.quantumflytrap.com/lab/measurement-destroys-interference
-  output: virtual_lab.png
+  output: output/virtual_lab.png
   wait: 5000
   height: 800
  

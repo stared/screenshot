@@ -49,9 +49,9 @@ jobs:
     - name: Take shots
       run: |
         shot-scraper multi shots.yml
-     - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: screenshots
-          FOLDER: output
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: screenshots
+        FOLDER: output

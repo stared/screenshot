@@ -50,6 +50,7 @@ jobs:
       run: |
         shot-scraper multi shots.yml
     - name: NPM install push-dir
+      shell: bash -l {0}
       run: |-
         npm install push-dir
     - name: Commit and push to screenshots branch

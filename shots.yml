@@ -1,3 +1,10 @@
-# - url: https://www.example.com/
-#   output: shot.png
-#   height: 800
+- url: https://p.migdal.pl
+  output: pmigdal.png
+  height: 800
+- url: https://quantumflytrap.com/
+  output: quantum_flytrap.png
+  height: 800
+- url: https://lab.quantumflytrap.com/lab/measurement-destroys-interference
+  output: virtual_lab.png
+  height: 800
+ 
